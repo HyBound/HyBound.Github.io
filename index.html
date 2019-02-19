@@ -8,14 +8,17 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="CSS/W3 Style.css" rel="stylesheet" type="text/css"/>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <style>
             body {font-family: "Lato", sans-serif}
         </style>
     </head>
 
     <body>
-
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    
     <!-- Page content -->
     <div class="w3-content w3-dark-gray" style="max-width:1600px;margin-top:46px">
 
@@ -75,13 +78,19 @@
                 <p class="w3-opacity w3-center"><i>I work in:</i></p>
 
                     <div class="w3-row w3-padding-32">
-
+                        <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+  Popover on top
+</button>
+                        <a tabindex="0" class="btn btn-lg btn-info" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" 
+    data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
                         <img class="w3-padding-large" src="images/Java.png" style="max-width: 150px">
                         <img class="w3-padding-large" src="images/html.png" style="max-width: 150px">
                         <img class="w3-padding-large" src="images/javascript.png" style="max-width: 150px">
                </div> 
             </div>
-
+                    <div class="w3-row w3-padding-32">
+                    <a href="https://github.com/HyBound/Tech-Academy-Projects" class="w3-black w3-button w3-padding-large w3-hide-small">GitHub</a>
+                    <div class="w3-row w3-padding-32"></div>
 
       <!-- Music Section -->
 
@@ -110,6 +119,8 @@
             <a href="https://soundcloud.com/hybound/" class="fa fa-soundcloud w3-hover-opacity"></a>
           <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
         </footer>
+    
+
     </body>
 </html>
 
@@ -118,6 +129,10 @@
 var myIndex = 0;
 var myPic = false;
 carousel();
+    
+    $('.popover-dismiss').popover({
+        trigger: 'focus'
+    });
 
 function carousel() {
     var i;
@@ -157,9 +172,7 @@ function nextPic() {
     carousel();
 }
 </script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
 
 
 
