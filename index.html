@@ -5,92 +5,112 @@
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+
+        <link rel="shortcut icon" href="../favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="CSS/W3 Style.css" rel="stylesheet" type="text/css"/>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="js/modernizr.custom.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="CSS/W3 Style.css" type="text/css"/>
+
         <style>
             body {font-family: "Lato", sans-serif}
         </style>
     </head>
 
     <body>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     
     <!-- Page content -->
-    <div class="w3-content w3-dark-gray" style="max-width:1600px;margin-top:46px">
+    <div class="w3-content" style="max-width:1600px;margin-top:46px;background-color:0F0D3S">
 
         <!-- Navbar -->
         <div class="w3-top">
-          <div class="w3-bar w3-black w3-card-2">
+          <div class="w3-bar w3-card-2" style='background-color: #0F0D35'>
             <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
             <a href=#top class="w3-bar-item w3-button w3-padding-large">HOME</a>
             <a href=#coding class="w3-bar-item w3-button w3-padding-large w3-hide-small">CODING</a>
             <a href=#music class="w3-bar-item w3-button w3-padding-large w3-hide-small">MUSIC</a>
-            <div class="w3-dropdown-hover w3-hide-small">
-                <button class="w3-padding-large w3-button w3-black" title="Style">STYLE <i class="fa fa-caret-down"></i></button>     
-                <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                    <button onclick="nextPic()" class="w3-bar-item w3-button">Next Style</button>
-                </div>
-            </div>
-            <a href="" class="w3-padding-large w3-hover-green w3-hide-small w3-right">LOG IN</a>
+           
           </div>
         </div>
 
         <!-- Navbar on small screens -->
-        <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px;background-color: #0F0D35">
           <a href=#top class="w3-bar-item w3-button w3-padding-large">HOME</a>
           <a href=#coding class="w3-bar-item w3-button w3-padding-large">CODING</a>
           <a href=#music class="w3-bar-item w3-button w3-padding-large">MUSIC</a>
-          <a href="Login.php" class="w3-bar-item w3-button w3-padding-large">LOG IN</a>
+          
         </div>
+        
+        <!-- Coding Section -->
+        <div id="coding" class='w3-padding-64' style='background-color: #F4BB8A'>
+            <h1 class="w3-wide w3-center" style='color: #393B63;text-decoration: underline'>CODING</h1>
+		<div class="container">
+                    <div class="wrapper">
+			<ul class="stage clearfix">
+                            <li class="scene">
+                                <h2 class='w3-center' style='color:#F6F7F3'>Front-End</h2>
+                                    <div class="movie" onclick="return true">
+					<div class="poster"></div>
+					<div class="info">
+                                            <header>
+						<h1>HTML5</h1>
+                                                    <span class="year">JQuery</span>
+                                                    <span class="rating">JS</span>
+                                                    <span class="duration">CSS</span>
+                                            </header>
+						<p>
+                                                    Creating web pages like the one you're viewing now. Experience with designing and creating Graphical UI's.
+						</p>
+					</div>
+                                    </div>
+                            </li>
 
+					<li class="scene">
+                                            <h2 class='w3-center' style='color:#F6F7F3'>Back-End</h2>
+						<div class="movie" onclick="return true">
+							<div class="poster"></div>
+							<div class="info">
+								<header>
+									<h1>Java</h1>
+									<span class="year">Python</span>
+									<span class="rating">C#</span>
+									<span class="duration">SQL</span>
+								</header>
+								<p>
+									Programming, coding and general design are all important aspects of delivering a project. Experience with building workable, runnable programs.
+								</p>
+							</div>
+						</div>
+					</li>
 
-        <!-- Slideshow Images -->
-        <div id="slides" class="w3-dark-grey">
-            <div class="mySlides w3-display-container w3-center">
-                <img src="images/Classic.jpg" style="max-width: 800px">
+					<li class="scene">
+                                            <h2 class='w3-center' style='color:#F6F7F3'>Technology</h2>
+						<div class="movie" onclick="return true">
+							<div class="poster"></div>
+							<div class="info">
+								<header>
+									<h1>Eclipse</h1>
+                                                                        <span class="year">Netbeans</span>
+                                                                        <span class="rating">VisualStudio</span>
+                                                                        
+								</header>
+								<p>
+									Experience with a variety of Integrated Development Environments including versioning software like Git.
+								</p>
+							</div>
+						</div>
+					</li>
 
-            </div>
-
-            <div class="mySlides w3-display-container w3-center">
-              <img src="images/Retro.jpg" style="max-width: 800px">
-              <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">  
-              </div>
-            </div>
-
-            <div class="mySlides w3-display-container w3-center">
-                <img src="images/Future.jpg" style="max-width: 800px">
-              <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small"></div>
-            </div>
-            <div class="w3-padding-16"></div>
+				</ul>
+			</div><!-- /wrapper -->
+		</div><!-- /container -->
         </div>
-
-        <!-- Coding -->
-
-            <div id="coding" class="w3-container w3-content w3-light-grey w3-center w3-padding-64" >
-                <h2 class="w3-wide">CODING</h2>
-                <p class="w3-opacity"><i></i></p>
-                <p class="w3-justify"></p>
-                <p class="w3-opacity w3-center"><i>Want code that doesn't break, nor breaks the bank? </i></p>
-                <p class="w3-opacity w3-center"><i>I work in:</i></p>
-
-                    <div class="w3-row w3-padding-32">
-                        <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-  Popover on top
-</button>
-                        <a tabindex="0" class="btn btn-lg btn-info" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" 
-    data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
-                        <img class="w3-padding-large" src="images/Java.png" style="max-width: 150px">
-                        <img class="w3-padding-large" src="images/html.png" style="max-width: 150px">
-                        <img class="w3-padding-large" src="images/javascript.png" style="max-width: 150px">
-                </div> 
-                <div class="w3-row w3-padding-32">
-                    <a href="https://github.com/HyBound/Tech-Academy-Projects" class="w3-black w3-button w3-padding-large w3-hide-small">GitHub</a>
-                <div class="w3-row w3-padding-32"></div>
-            </div>
 
 
       <!-- Music Section -->
@@ -118,7 +138,6 @@
             <a href="https://instagram.com/hybound/" class="fa fa-instagram w3-hover-opacity"></a>
             <a href="https://twitter.com/hybound?lang=en" class="fa fa-twitter w3-hover-opacity"></a>
             <a href="https://soundcloud.com/hybound/" class="fa fa-soundcloud w3-hover-opacity"></a>
-          <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
         </footer>
     
 
@@ -126,53 +145,7 @@
 </html>
 
 
-<script>
-var myIndex = 0;
-var myPic = false;
-carousel();
-    
-    $('.popover-dismiss').popover({
-        trigger: 'focus'
-    });
 
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1;}    
-    x[myIndex-1].style.display = "block";
-    if (myPic === true){
-    setTimeout(carousel, 15);
-    myPic = false;
-    }
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") === -1) {
-        x.className += " w3-show";
-    } else { 
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target === modal) {
-    modal.style.display = "none";
-  }
-};
-
-function nextPic() {
-    var myPic = true;
-    carousel();
-}
-</script>
 
 
 
